@@ -12,10 +12,12 @@
     "dashboard:build": "ng build dashboard --prod",
     "dashboard:watch-build": "ng build dashboard --prod --watch",
     "dashboard:serve-build": "http-server -p 8000 -c-1 dist/dashboard",
-    "custumer:serve": "ng serve custumer -o --port 3000",
+    "custumer:serve": "ng serve custumer -o --port 3001",
     "custumer:build": "ng build custumer --prod",
     "custumer:watch-build": "ng build custumer --prod --watch",
-    "custumer:serve-build": "http-server -p 8000 -c-1 dist/custumer"
+    "custumer:serve-build": "http-server -p 8001 -c-1 dist/custumer",
+    "ui-layout:build": "ng build ui-layout && npm i dist/ui-layout --save-optional",
+    "library:build": "npm run ui-layout:build"
   },
   "private": true,
   "dependencies": {
