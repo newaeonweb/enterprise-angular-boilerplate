@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ui-layout": [
+        "dist/ui-layout"
+      ],
+      "ui-layout/*": [
+        "dist/ui-layout/*"
+      ]
+    }
   }
 }

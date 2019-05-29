@@ -266,6 +266,46 @@
           }
         }
       }
+    },
+    "ui-layout": {
+      "root": "projects/ui-layout",
+      "sourceRoot": "projects/ui-layout/src",
+      "projectType": "library",
+      "prefix": "ui-layout",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ui-layout/tsconfig.lib.json",
+            "project": "projects/ui-layout/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-layout/src/test.ts",
+            "tsConfig": "projects/ui-layout/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-layout/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ui-layout/tsconfig.lib.json",
+              "projects/ui-layout/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "dashboard"
