@@ -11,8 +11,11 @@
     "dashboard:serve": "ng serve dashboard -o --port 3000",
     "dashboard:build": "ng build dashboard --prod",
     "dashboard:watch-build": "ng build dashboard --prod --watch",
-    "dashboard:serve-build": "http-server -p 8000 -c-1 dist/dashboard"
-
+    "dashboard:serve-build": "http-server -p 8000 -c-1 dist/dashboard",
+    "custumer:serve": "ng serve custumer -o --port 3000",
+    "custumer:build": "ng build custumer --prod",
+    "custumer:watch-build": "ng build custumer --prod --watch",
+    "custumer:serve-build": "http-server -p 8000 -c-1 dist/custumer"
   },
   "private": true,
   "dependencies": {
