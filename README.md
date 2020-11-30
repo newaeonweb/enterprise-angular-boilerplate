@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
+To run on your machine after clone the repository, remove the file package-lock.json and run the following command:
+
+`npm install --no-optional`
+
+`npm run library:build`
+
+`npm run dashboard:serve`
+
+`npm run custumer:serve`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
