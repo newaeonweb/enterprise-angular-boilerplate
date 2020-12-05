@@ -30,8 +30,7 @@
             "styles": [
               "projects/dashboard/src/styles.scss"
             ],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -167,8 +166,7 @@
             "styles": [
               "projects/custumer/src/styles.scss"
             ],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "scripts": []
           },
           "configurations": {
             "production": {
